@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Tour — Echoes of Earth</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor"      id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Echoes of Earth</a>
+    <ul class="nav-links">
+      <li><a href="urban.html">Urban</a></li>
+      <li><a href="nature.html">Nature</a></li>
+      <li><a href="tech.html">Technology</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="tour.html">Virtual Tour</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Progress dots -->
+  <nav class="tour-progress" id="tourProgress">
+    <div class="tour-dot active" data-stop="0"></div>
+    <div class="tour-dot" data-stop="1"></div>
+    <div class="tour-dot" data-stop="2"></div>
+    <div class="tour-dot" data-stop="3"></div>
+    <div class="tour-dot" data-stop="4"></div>
+    <div class="tour-dot" data-stop="5"></div>
+    <div class="tour-dot" data-stop="6"></div>
+    <div class="tour-dot" data-stop="7"></div>
+  </nav>
+
+  <!-- Location HUD -->
+  <div class="location-hud" id="locationHud">
+    <p class="hud-label">Current Location</p>
+    <p class="hud-name" id="hudName">—</p>
+    <p class="hud-sub"  id="hudSub">—</p>
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="scroll-cue-tour" id="scrollCue">
+    <span>Scroll to enter</span>
+    <div class="scroll-line-t"></div>
+  </div>
+
+  <!-- ════ INTRO ════ -->
+  <section id="tour-intro" data-stop="0" data-name="Tour Begins" data-sub="Pre-Entry Briefing">
+    <div class="intro-bg">
+    <div class="hero-img-wrap"><img src="../images/tour-hero.jpg" alt="Dead city"><div class="hero-img-overlay"></div></div>
+  </div>
+    <div class="intro-grid"></div>
+    <div class="particles" id="particles"></div>
+    <div style="position:relative;z-index:2;">
+      <p class="intro-tag">Virtual Tour — City Archive 07</p>
+      <h1 class="intro-h1">INTO THE<br><span>DEAD CITY</span></h1>
+      <p class="intro-desc">You are about to enter what was once a major European city. Population: 2.4 million. Abandoned: Year 1 post-collapse. Current status: reclaimed. This cinematic tour documents six locations across the decay zone — scroll to begin.</p>
+      <div class="intro-meta">
+        <div class="meta-item"><span class="meta-label">Tour Stops</span><span class="meta-val">6</span></div>
+        <div class="meta-item"><span class="meta-label">Timeline</span><span class="meta-val">Yr 12–120</span></div>
+        <div class="meta-item"><span class="meta-label">Hazard Level</span><span class="meta-val">Moderate</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="warning-stripe"></div>
+
+  <!-- ════ STOP 1 — CITY GATES ════ -->
+  <section class="tour-section" id="stop-1" data-stop="1" data-name="The City Gates" data-sub="Year 12 — Outer Perimeter">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 01 — Outer Perimeter</p>
+        <h2 class="stop-title">THE CITY<br><em>GATES</em></h2>
+        <p class="stop-body">You enter from the south motorway. The tarmac has cracked into great grey islands, each one colonised by pioneer grasses and the first spindly birch saplings. Road signs still stand — their destinations no longer relevant.</p>
+        <p class="stop-body">The checkpoint booth lists slightly to one side. A door hangs open. Inside, a coffee mug sits on a windowsill, a dark ring marking where the liquid evaporated years ago.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Structural Integrity</span><div class="badge-bar"><div class="badge-fill" style="width:75%"></div></div><span class="badge-val">75%</span></div>
+          <div class="condition-badge"><span class="badge-label">Vegetation Cover</span><div class="badge-bar"><div class="badge-fill" style="width:30%"></div></div><span class="badge-val">30%</span></div>
+          <div class="condition-badge"><span class="badge-label">Year Observed</span><div class="badge-bar"><div class="badge-fill" style="width:12%"></div></div><span class="badge-val">Yr 12</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"The absence of sound is total. No engines, no voices, no aircraft. Only wind through grass growing between lane markings."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-1.jpg" alt="City gates outer perimeter" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STOP 2 — BOULEVARD ════ -->
+  <section class="tour-section" id="stop-2" data-stop="2" data-name="The Grand Boulevard" data-sub="Year 40 — City Centre">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 02 — City Centre</p>
+        <h2 class="stop-title">THE GRAND<br><em>BOULEVARD</em></h2>
+        <p class="stop-body">The city's main avenue has been reinterpreted by forty years of unrestrained growth. Young trees have colonised the central reservation, their roots lifting the ornamental paving into a broken mosaic.</p>
+        <p class="stop-body">The shopfronts are hollow, their glass long fallen. Facades hold their ornate stonework — but the interiors are dark chambers of rust and vine, where pigeons have built generations of nests undisturbed.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Structural Integrity</span><div class="badge-bar"><div class="badge-fill" style="width:55%"></div></div><span class="badge-val">55%</span></div>
+          <div class="condition-badge"><span class="badge-label">Vegetation Cover</span><div class="badge-bar"><div class="badge-fill" style="width:60%"></div></div><span class="badge-val">60%</span></div>
+          <div class="condition-badge"><span class="badge-label">Year Observed</span><div class="badge-bar"><div class="badge-fill" style="width:40%"></div></div><span class="badge-val">Yr 40</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"A fox family occupies what was once a luxury hotel lobby. The marble floors are pristine beneath the leaves. The kits play on the concierge desk."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-2.jpg" alt="Grand boulevard overgrown" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STOP 3 — STATION ════ -->
+  <section class="tour-section" id="stop-3" data-stop="3" data-name="Central Station" data-sub="Year 55 — Transit Hub">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 03 — Transit Hub</p>
+        <h2 class="stop-title">CENTRAL<br><em>STATION</em></h2>
+        <p class="stop-body">The station's Victorian iron roof has held — its great arches streaked with rust and decades of rain. Light falls in cathedral shafts through the broken skylights. The platforms are buried under a foot of leaf litter.</p>
+        <p class="stop-body">A train sits at platform three — its carriages intact but oxidised to a deep ochre, vines threading through the windows. The departure board is frozen mid-announcement: 07:42 to the capital.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Structural Integrity</span><div class="badge-bar"><div class="badge-fill" style="width:62%"></div></div><span class="badge-val">62%</span></div>
+          <div class="condition-badge"><span class="badge-label">Vegetation Cover</span><div class="badge-bar"><div class="badge-fill" style="width:50%"></div></div><span class="badge-val">50%</span></div>
+          <div class="condition-badge"><span class="badge-label">Year Observed</span><div class="badge-bar"><div class="badge-fill" style="width:55%"></div></div><span class="badge-val">Yr 55</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"A peregrine falcon nests in the arrivals hall clock tower. It hunts the pigeons that have colonised the upper galleries."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-3.jpg" alt="Central station ruins" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STOP 4 — TOWER BLOCK ════ -->
+  <section class="tour-section" id="stop-4" data-stop="4" data-name="Tower Block 7" data-sub="Year 70 — Residential Zone">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 04 — Residential Zone</p>
+        <h2 class="stop-title">TOWER<br><em>BLOCK 7</em></h2>
+        <p class="stop-body">The residential towers were built to last fifty years. At seventy, they are beginning to fulfil that promise. Frost has got into the rebars, which expand as they rust, cracking the concrete outward from within.</p>
+        <p class="stop-body">Floors 12 through 18 are inaccessible — stairwells collapsed inward six years ago. But floors 1 through 11 are a vertical ecosystem: each flat a different stage of reclamation, from bare concrete to mature woodland interior.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Structural Integrity</span><div class="badge-bar"><div class="badge-fill" style="width:40%"></div></div><span class="badge-val">40%</span></div>
+          <div class="condition-badge"><span class="badge-label">Vegetation Cover</span><div class="badge-bar"><div class="badge-fill" style="width:72%"></div></div><span class="badge-val">72%</span></div>
+          <div class="condition-badge"><span class="badge-label">Year Observed</span><div class="badge-bar"><div class="badge-fill" style="width:70%"></div></div><span class="badge-val">Yr 70</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"On the ninth floor, through a window framed in birch, you can see the entire city — a vast, still green, punctuated only by the tallest remaining spires."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-4.jpg" alt="Tower block exterior decay" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STOP 5 — ROOFTOP ════ -->
+  <section class="tour-section" id="stop-5" data-stop="5" data-name="The Rooftop" data-sub="Year 70 — City Panorama">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 05 — City Panorama</p>
+        <h2 class="stop-title">THE<br><em>ROOFTOP</em></h2>
+        <p class="stop-body">From eleven floors up, the transformation is total. Where once a sea of rooftops and industrial haze stretched to the horizon, there is now an unbroken canopy — punctuated by the tallest spires and occasional rusted masts.</p>
+        <p class="stop-body">The air is clean. Cleaner than it has been for two centuries. Raptors circle on thermals rising from the dark rooftops below. There is no sound of traffic. Only wind, birdsong, and in the distance — water.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Air Quality</span><div class="badge-bar"><div class="badge-fill" style="width:96%"></div></div><span class="badge-val">Pristine</span></div>
+          <div class="condition-badge"><span class="badge-label">Visibility</span><div class="badge-bar"><div class="badge-fill" style="width:88%"></div></div><span class="badge-val">88 km</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"You could mistake it for a natural forest. Only the geometry betrays it — the too-even spacing of former street grids, now rows of trees."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-5.jpg" alt="Rooftop city panorama" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STOP 6 — UNDERGROUND ════ -->
+  <section class="tour-section" id="stop-6" data-stop="6" data-name="The Underground" data-sub="Year 120 — Subterranean">
+    <div class="tour-inner">
+      <div class="tour-text reveal">
+        <p class="stop-num">Stop 06 — Subterranean</p>
+        <h2 class="stop-title">THE<br><em>UNDERGROUND</em></h2>
+        <p class="stop-body">Below street level, time moved more slowly. Without frost cycles, the metro tunnels held. The trains are still in their stations — sealed by a century of silt and the patient, downward creep of root systems.</p>
+        <p class="stop-body">Bioluminescent fungi have colonised entire platforms — a faint blue-green light that needs no power. Blind cave fish have appeared in the flooded lower tunnels. The underground has become its own ecosystem.</p>
+        <div class="condition-row">
+          <div class="condition-badge"><span class="badge-label">Structural Integrity</span><div class="badge-bar"><div class="badge-fill" style="width:85%"></div></div><span class="badge-val">85%</span></div>
+          <div class="condition-badge"><span class="badge-label">Ecosystem Health</span><div class="badge-bar"><div class="badge-fill" style="width:90%"></div></div><span class="badge-val">Thriving</span></div>
+          <div class="condition-badge"><span class="badge-label">Year Observed</span><div class="badge-bar"><div class="badge-fill" style="width:100%"></div></div><span class="badge-val">Yr 120</span></div>
+        </div>
+        <div class="observation"><span class="observation-label">Field Note</span><p>"The fungi give off just enough light to see by. It is the most beautiful thing observed on this entire survey. Down here, something new is beginning."</p></div>
+      </div>
+      <div class="tour-visual section-visual reveal reveal-delay-2">
+        <div class="visual-frame">
+          <div class="visual-corner tl"></div><div class="visual-corner tr"></div>
+          <div class="visual-corner bl"></div><div class="visual-corner br"></div>
+          <img src="../images/tour-6.jpg" alt="Underground tunnel fungi" class="scene-img">
+          <div class="img-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EPILOGUE ════ -->
+  <section id="stop-epilogue" data-stop="7" data-name="End of Tour" data-sub="Archive Closed">
+    <div class="epilogue-content reveal">
+      <div class="epilogue-line"></div>
+      <span class="section-label">End of Tour — City Archive 07</span>
+      <blockquote class="epilogue-quote">
+        "We did not ask the earth's permission to build our cities. We did not need to. It was always <em>patient enough</em> to wait for them back."
+      </blockquote>
+      <p class="epilogue-attr">— Echoes of Earth Field Survey, Year 120</p>
+      <div class="epilogue-links">
+        <a href="../index.html"  class="epilogue-link">Home</a>
+        <a href="urban.html"    class="epilogue-link">Urban Decay</a>
+        <a href="nature.html"   class="epilogue-link">Nature Reclaims</a>
+        <a href="tech.html"     class="epilogue-link">Tech Decay</a>
+        <a href="timeline.html" class="epilogue-link">Timeline</a>
+        <a href="about.html"    class="epilogue-link">About</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Echoes of Earth — Virtual Tour</p>
+    <p>City Archive 07 · 6 Stops · Year 12–120</p>
+    <p><a href="../index.html">Home</a> &nbsp;·&nbsp; <a href="about.html">About</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    const stops   = document.querySelectorAll('[data-stop]');
+    const dots    = document.querySelectorAll('.tour-dot');
+    const hud     = document.getElementById('locationHud');
+    const hudName = document.getElementById('hudName');
+    const hudSub  = document.getElementById('hudSub');
+    const scrollCue = document.getElementById('scrollCue');
+    let lastStop = -1;
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.dataset.stop);
+        const target = document.querySelector(`[data-stop="${idx}"]`);
+        if (target) target.scrollIntoView({ behavior:'smooth' });
+      });
+    });
+
+    const tourObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el   = e.target;
+        const stop = parseInt(el.dataset.stop);
+        if (stop === lastStop) return;
+        lastStop = stop;
+        dots.forEach(d => d.classList.remove('active'));
+        if (dots[stop]) dots[stop].classList.add('active');
+        const name = el.dataset.name;
+        const sub  = el.dataset.sub;
+        if (name && stop > 0) {
+          hudName.textContent = name;
+          hudSub.textContent  = sub || '';
+          hud.classList.add('visible');
+        } else {
+          hud.classList.remove('visible');
+        }
+        if (stop > 0) scrollCue.classList.add('hidden');
+      });
+    }, { threshold: 0.4 });
+
+    stops.forEach(s => tourObs.observe(s));
+  </script>
+</body>
+</html>

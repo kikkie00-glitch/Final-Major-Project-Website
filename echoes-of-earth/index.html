@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echoes of Earth</title>
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Echoes of Earth</a>
+    <ul class="nav-links">
+      <li><a href="pages/urban.html">Urban</a></li>
+      <li><a href="pages/nature.html">Nature</a></li>
+      <li><a href="pages/tech.html">Technology</a></li>
+      <li><a href="pages/timeline.html">Timeline</a></li>
+      <li><a href="pages/tour.html">Virtual Tour</a></li>
+      <li><a href="pages/about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-img-wrap">
+      <img src="images/hero-bg.jpg" alt="Decayed cityscape">
+      <div class="hero-img-overlay"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="particles" id="particles"></div>
+    <div style="position:relative;z-index:3;">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        Archive Online — Post-Collapse Year 2157
+        <span class="status-dot"></span>
+      </div>
+      <h1 class="hero-title">Echoes<br><span>of Earth</span></h1>
+      <p class="hero-sub">An exploration of decay — what remains when humanity falls silent and time reclaims everything we built.</p>
+      <div class="hero-nav">
+        <a href="pages/urban.html"    class="hero-btn">Urban Decay</a>
+        <a href="pages/nature.html"   class="hero-btn">Nature Reclaims</a>
+        <a href="pages/tech.html"     class="hero-btn">Tech Decay</a>
+        <a href="pages/timeline.html" class="hero-btn">Timeline</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="warning-stripe"></div>
+
+  <!-- INTRO TERMINAL -->
+  <section id="intro">
+    <div class="terminal-intro reveal">
+      <p class="t-green">> SYSTEM INITIALISED — ECHOES_OF_EARTH_ARCHIVE v2.1.57</p>
+      <p class="t-dim">  ----------------------------------------</p>
+      <p>> Loading sector data... <span class="t-green">OK</span></p>
+      <p>> Cross-referencing decay index... <span class="t-green">OK</span></p>
+      <p class="t-warn">> WARNING: Human activity signal — NONE DETECTED</p>
+      <p class="t-dim">  ----------------------------------------</p>
+      <p>> Three primary decay vectors identified: URBAN / NATURAL / TECHNOLOGICAL</p>
+      <p class="t-green">> Begin archive traversal: select a sector below_</p>
+    </div>
+    <div class="divider" style="margin:48px auto;"></div>
+    <p class="intro-lead reveal">When the last human hand stopped its work, <em>entropy did not pause.</em></p>
+  </section>
+
+  <!-- CARDS -->
+  <section id="chapters">
+    <div class="section-header reveal">
+      <span class="section-label">Explore the Archive</span>
+      <h2 class="section-title">Three Stages of <em>Decay</em></h2>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Urban -->
+      <a href="pages/urban.html" class="card reveal">
+        <div class="card-img-wrap">
+          <img src="images/card-urban.jpg" alt="Urban decay" class="card-img">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-content">
+          <p class="card-num">Chapter 01</p>
+          <h2 class="card-title">Urban<br><em>Decay</em></h2>
+          <p class="card-desc">Steel fractures. Roads buckle. The city becomes a monument to impermanence.</p>
+          <span class="card-link">Enter chapter →</span>
+        </div>
+      </a>
+
+      <!-- Nature -->
+      <a href="pages/nature.html" class="card reveal reveal-delay-1">
+        <div class="card-img-wrap">
+          <img src="images/card-nature.jpg" alt="Nature reclaiming ruins" class="card-img">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-content">
+          <p class="card-num">Chapter 02</p>
+          <h2 class="card-title">Nature<br><em>Reclaims</em></h2>
+          <p class="card-desc">Roots split asphalt. Rivers return. Earth digests everything left behind.</p>
+          <span class="card-link">Enter chapter →</span>
+        </div>
+      </a>
+
+      <!-- Tech -->
+      <a href="pages/tech.html" class="card reveal reveal-delay-2">
+        <div class="card-img-wrap">
+          <img src="images/card-tech.jpg" alt="Technological decay" class="card-img">
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-content">
+          <p class="card-num">Chapter 03</p>
+          <h2 class="card-title">Tech<br><em>Decay</em></h2>
+          <p class="card-desc">Servers fall silent. Satellites drift. The digital world dissolves.</p>
+          <span class="card-link">Enter chapter →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div class="warning-stripe"></div>
+
+  <!-- QUOTE -->
+  <section id="quote-section">
+    <div class="divider"></div><br><br>
+    <blockquote class="big-quote reveal">"Nature does not hurry, yet <em>everything is accomplished</em> — even the undoing of ten thousand years of human industry."</blockquote>
+    <p class="quote-attr reveal reveal-delay-1">— Echoes of Earth Archive, Vol. I</p>
+    <br><br><div class="divider"></div>
+  </section>
+
+  <footer>
+    <p>Echoes of Earth — Final Major Project 2025</p>
+    <p><a href="pages/urban.html">Urban</a> &nbsp;·&nbsp; <a href="pages/nature.html">Nature</a> &nbsp;·&nbsp; <a href="pages/tech.html">Technology</a> &nbsp;·&nbsp; <a href="pages/timeline.html">Timeline</a> &nbsp;·&nbsp; <a href="pages/tour.html">Tour</a> &nbsp;·&nbsp; <a href="pages/about.html">About</a></p>
+    <p>All environments decay</p>
+    <p>&copy; 2026 Echoes of Earth Archive. All rights reserved. By Keira Makeba Mungofa</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
